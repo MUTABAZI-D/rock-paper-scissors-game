@@ -6,6 +6,7 @@ import { ResetScore } from "./components/ResetScore";
 import { useEffect, useState } from "react";
 import { Moves } from "./components/playGame/Moves";
 import { TrackResults } from "./components/TrackResults";
+import { Box } from "@mui/material";
 
 function App() {
   const [playerChoice, setPlayerChoice] = useState<string | null>(null);
@@ -24,14 +25,20 @@ function App() {
   }, [trackResults]);
 
   return (
-    <>
+    <Box
+      sx={{
+        maxWidth: "500px",
+        px: "50px",
+        mx: "auto",
+      }}
+    >
       <Heading />
       <Play setPlayerChoice={setPlayerChoice} />
       <Results playerChoice={playerChoice} setTrackResults={setTrackResults} />
       <Moves playerChoice={playerChoice} />
       <TrackResults trackResults={trackResults} />
       <ResetScore setTrackResults={setTrackResults} />
-    </>
+    </Box>
   );
 }
 
