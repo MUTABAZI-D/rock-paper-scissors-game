@@ -27,7 +27,7 @@ function App() {
   return (
     <Box
       sx={{
-        maxWidth: "500px",
+        maxWidth: "600px",
         px: "50px",
         mx: "auto",
       }}

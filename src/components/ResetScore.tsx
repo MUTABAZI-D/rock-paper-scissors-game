@@ -19,7 +19,7 @@ export const ResetScore = ({ setTrackResults }: ResetScoreProps) => {
       <Button
         variant="contained"
         color="inherit"
-        sx={{ textTransform: "none", fontSize: 15 }}
+        sx={{ textTransform: "none", fontSize: { xs: 12.5, md: 15 } }}
         onClick={handleReset}
       >
         Reset Score

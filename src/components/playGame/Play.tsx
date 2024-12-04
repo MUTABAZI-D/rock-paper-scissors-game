@@ -22,13 +22,13 @@ export const Play = ({ setPlayerChoice }: PlayProps) => {
         alt="rock"
         src={"/images/rock-emoji.png"}
         sx={{
-          width: 116,
-          height: 116,
+          width: { xs: 80, md: 116 },
+          height: { xs: 80, md: 116 },
           border: "3px solid white",
           "& img": {
-            width: 56,
-            height: 56,
-            marginBottom: 2,
+            width: { xs: 40, md: 56 },
+            height: { xs: 40, md: 56 },
+            mb: { xs: 1, md: 2 },
           },
         }}
         onClick={() => handlePlayerChoice("rock")}
@@ -38,12 +38,12 @@ export const Play = ({ setPlayerChoice }: PlayProps) => {
         alt="paper"
         src={"/images/paper-emoji.png"}
         sx={{
-          width: 116,
-          height: 116,
+          width: { xs: 80, md: 116 },
+          height: { xs: 80, md: 116 },
           border: "3px solid white",
           "& img": {
-            width: 56,
-            height: 56,
+            width: { xs: 40, md: 56 },
+            height: { xs: 40, md: 56 },
           },
         }}
         onClick={() => handlePlayerChoice("paper")}
@@ -53,12 +53,12 @@ export const Play = ({ setPlayerChoice }: PlayProps) => {
         alt="scissors"
         src={"/images/scissors-emoji.png"}
         sx={{
-          width: 116,
-          height: 116,
+          width: { xs: 80, md: 116 },
+          height: { xs: 80, md: 116 },
           border: "3px solid white",
           "& img": {
-            width: 56,
-            height: 56,
+            width: { xs: 40, md: 56 },
+            height: { xs: 40, md: 56 },
           },
         }}
         onClick={() => handlePlayerChoice("scissors")}
