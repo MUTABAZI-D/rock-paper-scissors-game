@@ -27,9 +27,8 @@ function App() {
   return (
     <Box
       sx={{
-        maxWidth: "700px",
+        maxWidth: { xs: "300px", md: "600px" },
         mx: "auto",
-        px: "80px",
       }}
     >
       <Heading />
