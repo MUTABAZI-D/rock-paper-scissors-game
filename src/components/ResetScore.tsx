@@ -1,4 +1,5 @@
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
+import { motion } from "motion/react";
 
 type ResetScoreProps = {
   setTrackResults: React.Dispatch<any>;
@@ -15,15 +16,13 @@ export const ResetScore = ({ setTrackResults }: ResetScoreProps) => {
   };
   return (
     <Box mt={2}>
-      {" "}
-      <Button
-        variant="contained"
-        color="inherit"
-        sx={{ textTransform: "none", fontSize: { xs: 12.5, md: 15 } }}
+      <motion.button
+        whileTap={{ scale: 1.1, opacity: 0.5 }}
         onClick={handleReset}
+        className="bg-white py-2 px-4 border rounded shadow-md font-semibold text-sm lg:text-lg"
       >
         Reset Score
-      </Button>
+      </motion.button>
     </Box>
   );
 };
