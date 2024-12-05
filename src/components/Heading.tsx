@@ -6,7 +6,7 @@ export const Heading = () => {
       sx={{
         fontWeight: "bold",
         color: "white",
-        fontSize: { xs: 20, md: 35 },
+        fontSize: { xs: 22, md: 35 },
       }}
       mt={3}
     >
